@@ -1,0 +1,33 @@
+namespace BombStack.Data
+{
+    public enum CELL_TYPE { EMPTY = 0, NORMAL = 1, BOMB = 2, TRIGGER = 3 }
+    public enum BOMB_TYPE { NONE = 0, B01_BASIC = 1, B02_HORIZONTAL = 2, B03_VERTICAL = 3, B04_RELAY = 4 }
+    public enum PIECE_SHAPE { I = 0, O = 1, T = 2, S = 3, Z = 4, J = 5, L = 6 }
+    public enum PIECE_ROTATION { SPAWN = 0, CLOCKWISE_90 = 1, CLOCKWISE_180 = 2, CLOCKWISE_270 = 3 }
+    public enum COMMON_UPGRADE_TYPE { RECOVERY_MASTERY = 0, GRAVITY_MASTERY = 1, BOMB_MASTERY = 2 }
+    public enum GROWTH_CHOICE_TYPE { ACQUIRE_BOMB = 0, UPGRADE_BOMB = 1, COMMON_UPGRADE = 2 }
+    public enum RELIC_TYPE
+    {
+        R01_PRECISION_BLAST = 0,
+        R02_CHAIN_AMPLIFIER = 1,
+        R03_IGNITION_AMPLIFIER = 2,
+        R04_GRAVITY_CHARGER = 3,
+        R05_DEMOLITION_BONUS = 4,
+        R06_HEATPROOF_TRIGGER = 5
+    }
+    public enum RELIC_EFFECT
+    {
+        NORMAL_CELL_UNIT_BONUS = 0,
+        CHAIN_MULTIPLIER_BONUS_TWICE = 1,
+        DIAGONAL_IGNITION = 2,
+        ADDITIONAL_WAVE_BONUS = 3,
+        MASS_DESTRUCTION_BONUS = 4,
+        PRESERVE_TRIGGERS = 5
+    }
+    public enum RUN_STATE { PREPARING = 0, PIECE_CONTROL = 1, RESOLVING = 2, LEVEL_UP_CHOICE = 3, RELIC_CHOICE = 4, PAUSED = 5, RESULT = 6 }
+    public enum RUN_END_REASON { NONE = 0, VICTORY = 1, PIECE_LIMIT = 2, SPAWN_BLOCKED = 3, ABANDONED = 4 }
+    public enum GAME_LANGUAGE { KOREAN = 0, ENGLISH = 1 }
+    public enum WINDOW_MODE { WINDOWED = 0, BORDERLESS_FULLSCREEN = 1 }
+    public enum FLASH_MODE { OFF = 0, LOW = 1 }
+    public enum PRESENTATION_SPEED { NORMAL = 0, FAST = 1 }
+}
